@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background:whitesmoke;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+ 
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    color: #555;
+}
+
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+.cart-logo{
+    width: 30px;
+    height:30px;
+}
+
+
+.menu-icon{
+     width: 25px;
+     margin-left: 20px;
+     display: none;
+}   
+/* media query for menu-icon */
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: orangered;
+        width: 100%;
+        overflow: hidden;
+        transition: 1s;
+        box-shadow: 5px 5px 20px;
+
+    }
+    nav ul li {
+        display: block;
+        margin-left: 70%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color:whitesmoke;
+    }
+    .menu-icon{
+        display: inline-block;
+        cursor: pointer;
+
+    }
+}
+
+
+p{
+    color: #555;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px; 
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.colume-1{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.colume-1 img{
+    max-width: 100%;
+    padding: 50px 0;
+    
+}
+.colume-1 h1{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 60px;
+    margin: 25px 0;
+
+}
+.btn{
+    display: inline-block;
+    color: white;
+    background: red;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 1s;
+    box-shadow: 5px 5px 10px;
+}
+.btn:hover{
+    color:crimson;
+    background:transparent;
+    border: crimson solid 1px;
+}
+.categories{
+    margin: 70px 0;
+}
+.colume-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+
+}
+.colume-3 img{
+    width: 100%;
+}
+.container-1{
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.colume-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: 1s;
+
+}
+.colume-4 img{
+    width: 100%;
+
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+
+}
+.title::after{
+    content: '';
+    background: orangered;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+h4{
+    color: grey;
+    font-weight: normal;
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
+}
+.colume-4 p{
+    font-size: 17px;
+
+}
+
+.colume-4:hover{
+    transform: translateY(-10px);
+}
+/* Offer */
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+small{
+    color: #555;
+}
+
+/* Footer */
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-colume-1, .footer-colume-2, .footer-colume-3, .footer-colume-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-colume-1{
+    flex-basis: 20%;
+}
+.footer-colume-2{
+    flex-basis: 1;
+    text-align: center;
+}
+.footer-colume-2 img{
+    width: 120px;
+    margin-bottom: 20px;
+
+}
+.footer-colume-3, .footer-colume-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.app-logo{
+    margin-top: 20px;
+
+}
+.app-logo img{
+    width: 120px;
+
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;     
+}
+.copyright{
+    text-align: center;
+}
+
+#info{
+    font-size: 20px;
+    font-family:  'Courier New', Courier;
+}
+/* media query for less than 600 */
+@media only screen and (max-width:500px){
+    .row{
+        text-align: center;
+    }
+    .colume-1 ,.colume-3,.colume-4{
+        flex-basis: 100%;
+    }
+
+}
